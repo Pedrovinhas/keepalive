@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Compass - Login </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/styles/css/main.css">
+    <link href="http://fonts.cdnfonts.com/css/mark-pro" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" />
+</head>
+
+<body>
+
+    <main>
+        <section class="section__login">
+            <div class="login__title">
+                <h1> Olá, </h1>
+                <p>
+                    Para continuar navegando de forma segura, efetue o login na rede.
+                </p>
+            </div>
+            <div class="login__credentials">
+                <span class="crendetials__title"> Login </span>
+                <div class="credentials__input-user">
+                    <input type="text" placeholder="Usuário" id="user">
+                    <img src="/assets/icon-user.svg" alt="Ícone do usuário" id="user-icon">
+                </div>
+                <div class="credentials__input-password">
+                    <input type="password" placeholder="Senha" id="password">
+                    <img src="/assets/icon-password.svg" alt="Ícone da senha" id="password-icon">
+                </div>
+
+                <span class="credentials__error" id="error">
+                    Ops, usuário ou senha inválidos. Tente novamente!
+                </span>
+            </div>
+
+            <button type="button" class="login__button">
+                Continuar
+            </button>
+        </section>
+        <section class="section__bg">
+            <img src="/assets/logo-compass-white.png" alt="Compass Logo">
+        </section>
+    </main>
+
+    <dialog class="modal-popup">
+        <button class="popup-btn__save"> Continuar logado </button>
+        <button class="popup-btn__leave"> Sair </button>
+    </dialog>
+
+
+    <script type="module" src="/js/loginValidation.js"></script>
+   <script src="js/popup.js"></script>
+   <script src="js/inputAnimation.js"></script>
+</body> 
+
+</html>
