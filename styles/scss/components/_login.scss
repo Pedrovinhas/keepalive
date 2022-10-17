@@ -1,0 +1,254 @@
+main {
+    width: 100vw;
+    height: 100vh;
+
+    .section__login {
+        background: $gradient-black;
+        height: 100vh;
+       
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        gap: 5rem; // 10rem
+
+        @include breakpoint(laptop) {
+            width: 50vw;
+        }
+
+        .login__title {
+            margin-left: 1.6rem;
+
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+
+            color: $text-color-secondary;
+
+            h1 {
+                font-size: 4rem;
+                line-height: 7.6rem;
+                font-weight: 400;
+
+                @include breakpoint(laptop) {
+                    font-size: 3.2rem;
+                }
+            }
+
+            p {
+                line-height: 2rem;
+                max-width: 30.1rem;
+                font-weight: 400;
+
+                @include breakpoint(laptop) {
+                    font-size: 1.2rem;
+
+                    
+                }
+            }
+        }
+
+        .login__credentials {
+            margin-left: 1.6rem;
+
+            width: 30rem;
+
+
+            gap: 1.6rem;
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+
+            color: $text-color-secondary;
+
+
+            .crendetials__title {
+                font-size: 2.4rem;
+                line-height: 3.8rem;
+
+                @include breakpoint(laptop) {
+                    font-size: 1.8rem;
+
+                    
+                }
+            }
+
+            .credentials__input-user {
+                width: 100%;
+                display: flex;
+                align-items: center;
+
+                position: relative;
+
+                input {
+                    @include loginInput;
+                    padding: 1rem;
+                    width: 22rem;
+                    
+                    @include breakpoint(laptop) {
+                        width: 100%;
+                    } 
+                }
+
+                img {
+                    position: absolute;
+                    left: 230px;
+
+                    @include breakpoint(laptop) {
+                        left: 350px;
+                    }
+                    
+                }
+
+            }
+
+            .credentials__input-password {
+                width: 100%;
+                display: flex;
+                align-items: center;
+            
+                position: relative;
+
+                input {
+                    @include loginInput;
+                    padding: 1rem;
+                    width: 22rem;
+                
+
+                    @include breakpoint(laptop) {
+                        width: 100%;
+                    } 
+                }
+
+                img {
+                    position: absolute;
+                    left: 230px;
+         
+
+                    @include breakpoint(laptop) {
+                        left: 350px;
+                    }
+ 
+                }
+
+            }
+
+            .credentials__error {
+                text-align: center;
+                color: $yellow-900;
+                font-weight: 700;
+
+                display: none;
+            }
+        }
+
+        .login__button {
+            margin-left: 1.6rem;
+            @include loginButton;
+
+            width: 30rem;
+            max-width: 37.9rem;
+            height: 5rem;
+            max-height: 6.7rem;
+
+
+        }
+    }
+
+    .section__bg {
+        display: none;
+    }
+
+}
+
+
+dialog {
+
+    .popup-btn__save {
+        border: none;
+        height: 100%;
+        width: 50%;
+        color: $orange-900;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .popup-btn__leave {
+        border: none;
+        background: $gradient-black;
+        color: $color-grey;
+        height: 100%;
+        width: 50%;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+ 
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, .3);
+    &::backdrop {
+        background-color: rgba(0, 0, 0, .6);
+    }
+
+    &:modal {
+        width: 80vw;
+        height: 20%;
+        border: none;
+        border-radius: .5rem;
+        // border: .1rem solid $color-grey;
+        background: $gradient-black;
+
+        padding: 0;
+
+      
+    }
+
+}
+
+dialog[open] {
+    &[open] {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+       
+    }
+}
+
+
+
+@media screen and(min-width: 1024px) {
+  
+
+    main {
+        height: 100vh;
+        width: 100vw;
+
+        display: flex;
+        
+
+        .section__login {
+            width: 50vw;
+            
+        }
+    .section__bg {
+        width: 50vw;
+  
+        background-image: url(/assets/laptop.png);
+        background-size: cover;
+        background-position: center;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+
+        img {
+            margin-top: 3.6rem;
+            max-width: 250px;
+        }
+    }
+}
+}
