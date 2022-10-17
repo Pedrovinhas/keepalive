@@ -1,0 +1,497 @@
+.home__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 2rem;
+  
+
+    margin-top: 2.4rem;
+
+    @include breakpoint(mobile-L) {
+        justify-content: space-between;
+    }
+  
+
+    // padding-left: 4rem;
+    // padding-right: 4rem;
+
+    .header__logo {
+        margin-top: .4rem;
+        margin-bottom: 1.2rem;
+        width: 20%;
+        height: 20%;
+        
+        align-self: flex-start;
+
+        max-width: 130px;
+
+        @include breakpoint(mobile-L) {
+            margin-left: 2rem;
+        }
+
+        @include breakpoint(tablet) {
+            margin-left: 4rem;
+        }
+    }
+
+    .header__clock {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.2rem;
+
+        .clock__time {
+            color: $black-700;
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 4rem;
+
+            @include breakpoint(tablet) {
+                font-size: 6.4rem;
+            }
+
+            @include breakpoint(laptop) {
+                font-size: 8.4rem;
+                margin-top: 1.2rem;
+            }
+
+            @include breakpoint(laptop-l) {
+                font-size: 11.2rem;
+                margin-top: 2rem;
+            }
+        }
+
+        .clock__date {
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+            color: $black-700;
+
+            text-align: center;
+
+            max-width: 12rem;
+
+            @include breakpoint(tablet) {
+                max-width: none;
+            }
+            
+            @include breakpoint(laptop) {
+                margin-top: 1.2rem;
+            }
+
+            @include breakpoint(laptop-l) {
+                margin-top: 2.4rem;
+            }
+        }
+    }
+
+    .header__weather {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: .4rem;
+
+        @include breakpoint(mobile-L) {
+            margin-right: 2rem;
+        }
+
+        @include breakpoint(tablet) {
+            margin-right: 4rem;
+        }
+
+        .weather__location {
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+            color: $black-700;
+        }
+
+        .weather__container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .weather__information {
+                font-size: 2rem;
+                line-height: 2.4rem;
+                font-weight: 700;
+
+            }
+
+            .weather__icon {
+                width: 34px;
+                height: 34px;
+            }
+        }
+
+    }
+
+
+}
+
+section {
+    overflow-x: hidden;
+ 
+    .main__message {
+        background-image: url('/assets/bg-compass.png');
+        background-repeat: no-repeat;
+        background-size: 200px;
+        background-position: left -50px bottom -120px;
+
+        height: 70vh; // 80vh
+
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        text-align: right;
+
+
+      
+        // padding-right: 6rem;
+
+        @include breakpoint(mobile-L) {
+          
+
+            background-size: 215px;
+        }
+
+        @include breakpoint(tablet) {
+            background-size: 300px;
+            background-position: left -50px bottom -20px;
+
+            height: 100vh;
+        }
+
+        @include breakpoint(laptop) {
+            background-size: 350px;
+            background-position: left -10px bottom -25px;
+        }
+
+        @include breakpoint(laptop-l) {
+            background-size: 525px;
+            background-position: left -20px bottom -50px;
+        }
+     
+
+        .message__first-line {
+            color: $orange-900;
+            font-size: 1.6rem;
+            margin-right: $mr-1;
+
+            &:first-child {
+                animation: fadeIn 4s;
+                opacity: 1; 
+                
+            }   
+
+            @include breakpoint(mobile-L) {
+                font-size: 2rem;
+                margin-right: $mr-2;
+            }
+
+            @include breakpoint(laptop) {
+                font-size: 2.4rem;
+                margin-right: $mr-3;
+            }
+
+            @include breakpoint(laptop-l) {
+                font-size: 2.8rem;
+                margin-right: 13.4rem;
+            }
+
+        }
+
+        .message__translation {
+            color: $black-700;
+            font-size: 1.4rem;
+            margin-right: $mr-1;
+          
+          
+        &:nth-child(2) {
+            animation: slideUp 2s;
+            opacity: 1;
+        }
+
+        &:nth-child(4) {
+            animation: slideUp 4s;
+            opacity: 1;
+        }
+
+        &:nth-child(6) {
+            animation: slideUp 5s;
+            opacity: 1;
+        }
+
+        &:nth-child(8) {
+            animation: slideUp 7s;
+            opacity: 1;
+        }
+
+
+            @include breakpoint(mobile-L) {
+                font-size: 1.6rem;
+                margin-right: $mr-2;
+            }
+
+            @include breakpoint(laptop) {
+                margin-right: $mr-3;
+               
+            }
+
+            @include breakpoint(laptop-l) {
+                font-size: 2rem;
+                margin-right: 13.4rem;
+            }
+        }
+
+        span:nth-child(3) {
+            animation: fadeIn 6s;
+            opacity: 1; 
+            
+            
+        }   
+
+        span:nth-child(4) {
+            animation: fadeIn 8s;
+            opacity: 1;  
+        }   
+
+        span:nth-child(5) {
+            animation: fadeIn 10s;
+            opacity: 1;  
+        }   
+
+          span:nth-child(7) {
+            animation: fadeIn 12s;
+            opacity: 1;  
+        }   
+
+        .message__subtitle {
+            font-size: 2rem; // 6.4rem
+            line-height: 4.1rem; // 8.1rem
+
+            font-weight: 700;
+            color: $orange-900;
+
+            margin-top: 0.4rem;
+            margin-right: $mr-1;
+
+            
+       
+
+            @include breakpoint(mobile-L) {
+                font-size: 2.8rem;
+                margin-right: $mr-2;
+            }
+
+            @include breakpoint(tablet) {
+                font-size: 3.2rem;
+            }
+
+            @include breakpoint(laptop) {
+                margin-right: $mr-3;
+                font-size: 3.8rem;
+            }
+
+            @include breakpoint(laptop-l) {
+                font-size: 4.2rem;
+                margin-right: 13.4rem;
+
+                margin-top: 1.2rem;
+            }
+        }
+
+    }
+
+    .footer {
+        background: $gradient-black;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        @include breakpoint(tablet) {
+            flex-direction: row;
+            justify-content: flex-end;
+            height: 10rem;
+
+            gap: 5rem;
+        }
+
+        
+
+        hr {
+            width: 90vw;
+
+            @include breakpoint(tablet) {
+                // height: 6.1rem;
+                // width: 0;
+
+                display: none;
+            }
+        }
+
+        .footer__alert-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            max-width: 54.1rem;
+            height: 9.1rem;
+
+            @include breakpoint(tablet) {
+                border-right: 1px solid $color-grey;
+                height: 6.1rem
+            }
+
+            @include breakpoint(laptop-l) {
+                margin-right: 14rem
+            }
+
+        .footer__alert {
+            margin-top: 2rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            padding-bottom: 1.2rem;
+            
+
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+            color: $color-grey;
+            font-weight: 300;
+         
+
+            display: flex;
+            align-items: center;
+
+            text-align: center;
+
+            @include breakpoint(tablet) {
+                padding-right: 2rem;
+                padding-bottom: 0;
+                margin-bottom: 2.2rem;
+            }
+
+        }
+    }
+
+        .footer__countdown {
+            margin-top: 1.2rem;
+
+            display: flex;
+            align-items: center;
+
+            gap: 3.2rem;
+
+            @include breakpoint(tablet) {
+                margin-left: 0rem;
+                gap: 1.6rem;
+            }
+
+            @include breakpoint(laptop-l) {
+                margin-right: 20rem
+            }
+
+            .countdown__title {
+                font-size: 1.4rem;
+                line-height: 1.8rem;
+                color: $color-grey;
+
+                @include breakpoint(tablet) {
+                    max-width: 10rem;
+                }
+            }
+
+            .countdown__timer {
+                text-align: center;
+
+                .timer__number {
+                    color: $color-grey;
+                    font-size: 3.2rem;
+                    font-weight: 700;
+                }
+
+                .timer__seconds {
+                    font-size: 1.4rem;
+                    line-height: 1.8rem;
+                    color: $color-grey;
+
+                }
+            }
+
+        }
+
+        .footer__menu-button {
+            margin-top: 1.2rem;
+            display: flex;
+            align-items: center;
+
+            justify-self: flex-end;
+
+            width: 100%;
+            height: 100%;
+           
+
+            @include breakpoint(tablet) {
+                
+               width: 26.1rem;
+              
+                margin-top: 0;
+               
+            }
+
+
+
+            .menu-button__continue {
+                @include homeButton;
+
+                background: $color-grey;
+                color: $orange-900;
+                text-align: center;
+                font-size: 1.2rem;
+                line-height: 1.5rem;
+
+                @include breakpoint(tablet) {
+                    height: 100%;
+                    width: 10rem;
+
+                    max-width: 50%;
+                  
+                }
+
+                @include breakpoint(laptop) {
+                    width: 50%;
+                }
+
+            }
+
+            .menu-button__logout {
+                @include homeButton;
+
+                background: $gradient-black;
+                color: $color-grey;
+                font-size: 1.2rem;
+                line-height: 1.5rem;
+                font-weight: 700;
+
+                @include breakpoint(tablet) {
+                    height: 100%;
+                    width: 10rem;
+
+                    max-width: 50%;
+                }
+
+                @include breakpoint(laptop) {
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+}
+
