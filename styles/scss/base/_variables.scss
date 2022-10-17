@@ -1,0 +1,116 @@
+$color-grey: #FFFFFF;
+$orange-900: #C12D18;
+$orange-300: #E29933;
+$yellow-900: #E9B425;
+$black-900: #000000;
+$black-700: #222222;
+
+$text-color-secondary: #E0E0E0;
+
+$gradient-black: linear-gradient(180deg, #33383D 0%, #1C1D20 100%);
+$gradient-orange: linear-gradient(90deg, #FF2D04 0%, #C13216 100%);
+
+$font: 'Mark Pro', 'Roboto', sans-serif;
+
+$mr-1: 1.6rem;
+$mr-2: 2.4rem; 
+$mr-3: 6rem;
+
+
+@mixin loginInput {
+    border: 1px solid $color-grey;
+    color: $text-color-secondary;
+    border-radius: 5rem;
+
+    font-family: $font;
+    background: none;
+}
+
+@mixin loginButton {
+    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.5));
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15);
+
+    background: $gradient-orange;
+    border-radius: 5rem;
+    border: none;
+
+    color: $color-grey;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+
+    cursor: pointer;
+}
+
+
+@mixin homeButton {
+    width: 100%;
+    height: 8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    cursor: pointer;
+}
+
+@mixin breakpoint($width) {
+    @if($width == mobile-L) {
+        @media screen and(min-width: 425px) {
+            @content
+        }
+    } 
+    @else if($width == tablet) {
+        @media screen and(min-width: 768px) {
+            @content
+        }
+    }
+    @else if($width == laptop) {
+        @media screen and(min-width: 1024px) {
+            @content
+        }
+    }
+
+    @else if($width == laptop-l) {
+        @media screen and(min-width: 1440px) {
+            @content
+        }
+    }
+
+}
+
+.slide-up {
+    animation: slideUp 2s;
+  	opacity: 1;
+}
+
+
+.fade-in {
+	animation: fadeIn 2s;
+  	opacity: 1;
+}
+
+@keyframes fadeIn {
+  from {
+  	opacity: 0;
+  }
+  to {
+ 	opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+    0%,
+    50% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+     
+    60%,
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    
+    }
+  }
