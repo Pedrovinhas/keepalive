@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Compass - Home </title>
+    <link rel="stylesheet" href="/styles/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/mark-pro" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <header class="home__header">
+        <img src="/assets/logo-compass.svg" alt="Logo da Compass" class="header__logo">
+
+        <div class="header__clock">
+            <span class="clock__time">
+               
+            </span>
+            <span class="clock__date">
+              
+            </span>
+        </div>
+        <div class="header__weather">
+            <span class="weather__location" id="location">
+
+            </span>
+            <div class="weather__container">
+                <span class="weather__information" id="temp">
+
+                </span>
+                <img alt="Clima na região" id="weatherIcon">
+            </div>
+        </div>
+    </header>
+    <section>
+
+        <main class="main__message">
+            <h1 class="message__first-line"> Our mission is </h1>
+            <p class="message__translation"> Nossa missão é</p>
+            <span class="message__subtitle">
+                to transform the world
+            </span>
+            <p class="message__translation"> transformar o mundo</p>
+            <span class="message__subtitle">
+                building digital experiences </span>
+            <p class="message__translation">construindo experiências digitais</p>
+            <span class="message__subtitle">
+                that enable our client’s growth
+            </span>
+            <p class="message__translation">que permitam o crescimento dos nossos clientes</p>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__alert-container">
+                <p class="footer__alert">
+                    Essa janela do navegador é usada para manter sua sessão de autenticação ativa. Deixe-a aberta em segundo
+                    plano e abra uma nova janela para continuar a navegar.
+                    <hr>
+                </p>
+            </div>
+            
+           
+            <div class="footer__countdown">
+                <p class="countdown__title">
+                    Application refresh in
+                </p>
+                <div class="countdown__timer">
+                    <span class="timer__number" id="countdown">
+                        600
+                    </span>
+                    <p class="timer__seconds">
+                        seconds
+                    </p>
+                </div>
+            </div>
+            <div class="footer__menu-button">
+                <a target="_blank" href="https://noticias.uol.com.br" class="menu-button__continue">
+                    Continuar <br> Navegando
+                </a>
+                <a class="menu-button__logout">
+                    Logout
+                </a>
+            </div>
+        </footer>
+    </section>
+
+  
+    <script src="/js/realTime.js"></script>
+    <!-- <script type="module" src="/js/countdown.js"></script> -->
+    <script src="/js/fetchApi.js"></script>
+ 
+   
+    <script type="module" src="/js/logout.js"></script>
+</body>
+
+</html>
