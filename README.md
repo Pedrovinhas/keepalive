@@ -82,6 +82,9 @@ Os usuários e senhas disponíveis no projeto são:
 - [X] Animação na página Home
 - [X] Responsividade para diversos aparelhos
 - [ ] Tela de Carregamento ([loading.io](https://loading.io/css/))
+- [ ] Refatoração
+  - [ ] JS
+  - [ ] SCSS
 
 ### 📱 Responsividade  
 - [X] Mobile
@@ -98,8 +101,16 @@ Os usuários e senhas disponíveis no projeto são:
 
 ```bash
 # Clone o projeto
-$git clone https://github.com/pedrovinhas/keepalive.git
+$ git clone https://github.com/pedrovinhas/keepalive.git
+
+# Acesse a pasta
+$ cd keepalive
 
 # Crie o arquivo firebaseConfig.js e copie as chaves.
 
+# Abra o Live Server
+
 ```
+
+---
+<code> Feito por Pedro Henrique Vinhas 🪐 </code>
