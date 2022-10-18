@@ -8,7 +8,7 @@
 | orange-900               | ![#C12D18](https://via.placeholder.com/15/C12D18/C12D18.png) #C12D18 |
 | orange-300               | ![#E29933](https://via.placeholder.com/15/C12D18/E29933.png) #E29933 |
 | black-700       | ![#222222](https://via.placeholder.com/15/222222/222222.png) #222222 |
-| black-900        | ![#222222](https://via.placeholder.com/15/26292C/222222.png) #222222 |
+| black-900        | ![#000000](https://via.placeholder.com/15/26292C/000000.png) #000000 |
 
 
 | Gradiente               | Hexadecimal                                                         |  Código | 
