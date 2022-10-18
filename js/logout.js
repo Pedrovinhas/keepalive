@@ -26,6 +26,5 @@ export function signOutUser() {
 logoutBtn.addEventListener('click', () => {
     signOutUser()
 
-  
 })
 

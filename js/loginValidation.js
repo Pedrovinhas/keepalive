@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-app.js";
-import { getAuth, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-auth.js"
+import { getAuth, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-auth.js"
 import { firebaseConfig } from "./firebaseConfig.js";
 
 const username = document.getElementById('user')
@@ -9,6 +9,7 @@ const continueBtn = document.querySelector('.login__button')
 
 const usersCredentials = {
     user: username.value,
+    password: password.value,
     accessToken: ''
 }
 
@@ -46,6 +47,7 @@ continueBtn.addEventListener('click', validateUser)
 
 function loginUser() {
     usersCredentials.user = username.value
+    usersCredentials.password = password.value
 
     error.style.display = 'none'
 
