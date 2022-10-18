@@ -6,7 +6,9 @@
 <p align="center">
   <a href="#-keepalive">🔐 Projeto</a>&nbsp;&nbsp;|&nbsp;&nbsp;
   <a href="#-Tecnologias"> 👩‍💻 Tecnologias</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-  <a href="#-Requisitos">  📝 Requisitos  </a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="#-Configurações"> 🔑  Configurações </a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="#-Requisitos-funcionais">  📝 Requisitos  </a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="#-Como-rodar-a-aplicação">  👷‍♀️ Como rodar  </a>&nbsp;&nbsp;
 </p>
 
 ## 🔐 keepalive
@@ -14,7 +16,7 @@
 
 ### ✒ **Layout**
 
-[![Figma](https://img.shields.io/badge/acessar%20layout%20no%20figma-222222?style=for-the-badge&logo=figma&logoColor=white)](https://greenkeeper.io/)
+[![Figma](https://img.shields.io/badge/acessar%20layout%20no%20figma-222222?style=for-the-badge&logo=figma&logoColor=white)](https://www.figma.com/file/DqSemG9Z09LG9cAf8L8nUm/keepalive)
 
 
 
@@ -30,15 +32,9 @@
 | [WeatherAPI](https://www.weatherapi.com/docs/)             | 
 | [NominationReverseGeolocation](https://nominatim.org/release-docs/develop/api/Reverse/)     |  
 
-## O que falta?
-- Animações no input, e nas letras da página Home.
-- Sign Up com o Fire Base no Pop Up, mudar lugar do Logout?
-- Permissão para usuários não logados não conseguirem ir para Home
-- Variáveis de Ambiente (.env)
+## 🔑 Configurações
 
-## 🔑 Variáveis de Ambiente
-
-Para rodar esse projeto, você vai precisar adicionar as seguintes variáveis de ambiente no seu .env
+Para rodar esse projeto, você vai precisar adicionar as seguintes informações em um objeto e exportá-lo no seu arquivo de configuração em `js/firebaseConfig.js`
 
 | **KEY**              | Valor                                                            |
 | -------------------- | ---------------------------------------------------------------- |
@@ -49,14 +45,21 @@ Para rodar esse projeto, você vai precisar adicionar as seguintes variáveis de
 | `messagingSenderId`  |  `993226167032`                                                  |
 | `appId`              |  `1:993226167032:web:f6b9876a1869a8743ea10d`                     |
 
+Os usuários e senhas disponíveis no projeto são:
+
+| **Usuário**           | **Senha**        |
+| -------------------- | ----------------- |
+| admin@compassouol.com.br  | `admin123`   |
+| fabi@compassouol.com.br  | `fabi123`     |
+| nico@compassouol.com.br  | `nico123`     |
+| leandro@compassouol.com.br  | `leandro123` |
 
  ## 📝 Requisitos funcionais
 
 ### ✔ Requisitos Principais
 
-- [X] Fazer pequenos commits
-- [X] O projeto deve ter 4 estados, sendo elas: Login, Login preenchido, Login Error, Home.
-- [X] Utilizar de ícones e fontes (Mark Pro, Nunito ou Poppins)
+- [X] Telas de: Login (Preenchido, Vazio e Erro) e Home.
+- [X] Fontes (Mark Pro, Nunito ou Poppins)
 - [X] Login deve possuir usuário e senha, podendo ser apenas: "admin" e "admin".
 - [X] Página Home deve ter horário e data completa.
 - [X] Página Home deve informar Clima/Tempo tendo como referência a geolocalização do usuário logado
@@ -78,6 +81,7 @@ Para rodar esse projeto, você vai precisar adicionar as seguintes variáveis de
   - [X] Continuar conectado
 - [X] Animação na página Home
 - [X] Responsividade para diversos aparelhos
+- [ ] Tela de Carregamento ([loading.io](https://loading.io/css/))
 
 ### 📱 Responsividade  
 - [X] Mobile
@@ -88,4 +92,14 @@ Para rodar esse projeto, você vai precisar adicionar as seguintes variáveis de
 
 ## 🎨 Documentação de Cores
 
-- Você pode consultar a documentação das cores através desse link: [styleguide](./styleguide.md)
+- Você pode consultar a documentação das cores através desse link [Styleguide](./styleguide.md).
+
+## 👷‍♀️ Como rodar a aplicação
+
+```bash
+# Clone o projeto
+$git clone https://github.com/pedrovinhas/keepalive.git
+
+# Crie o arquivo firebaseConfig.js e copie as chaves.
+
+```
