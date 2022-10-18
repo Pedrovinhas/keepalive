@@ -242,6 +242,7 @@ main .section__login .login__credentials .credentials__error {
   text-align: center;
   color: #E9B425;
   font-weight: 700;
+  font-size: 1.6rem;
   display: none;
 }
 
