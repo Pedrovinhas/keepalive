@@ -58,20 +58,21 @@ Os usuários e senhas disponíveis no projeto são:
 
 ### ✔ Requisitos Principais
 
-- [X] Telas de: Login (Preenchido, Vazio e Erro) e Home.
-- [X] Fontes (Mark Pro, Nunito ou Poppins)
-- [X] Login deve possuir usuário e senha, podendo ser apenas: "admin" e "admin".
-- [X] Página Home deve ter horário e data completa.
-- [X] Página Home deve informar Clima/Tempo tendo como referência a geolocalização do usuário logado
-- [X] Página Home deve apresentar um Temporizador de tempo logado em segundos (600s)
-  - [X] Quando zerado, deverá redirecionar para a página de Login. (podendo ser 180s na apresentação).
-- [X] Manter o Título da página como "Compass - Login" e "Compass - Home".
-- [X] Logout ao clicar em "Logout" na página Home.
-- [X] Armazenar os dados preenchidos de login e password no `LocalStorage`
+- [X] Telas
+  - [X] Login (Preenchido, Vazio e Erro)
+  - [X] Home
+- [X] Validação login com usuário e senha
+- [X] Data e horário em tempo real
+- [X] Exibir informação de Clima/Tempo conforme geolocalização do usuário
+- [X] Cronômetro ao acessar a página Home.
+- [X] Redirecionar o usuário ao término do cronômetro para página Login
+- [X] Logout do usuário
+- [X] Armazenar dados no LocalStorage
+- [X] Controlar o estado do usuário de Logout e Login
     - [X] Caso o usuário realize o logout, deverá aparecer um Pop-up que perguntará ao usuário se deseja continuar logado
     - [X] Caso deseje continuar logado, o login será automático sem a necessidade de preencher os campos novamente
     - [X] Caso deseje sair, o local storage deverá ser resetado e o usuário deslogado.
-- [X] Ao clicar em "continuar navegando" deverá abrir uma nova aba no browser, sendo essa a página de notícias da UOL.´
+- [X] Navegação para página da UOL
 
 ### ✨ Funcionalidades adicionais
 - [X] Autenticação com Firebase
