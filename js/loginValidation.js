@@ -71,6 +71,8 @@ function validateUser() {
 
 function invalidateUser() {
     error.style.display = 'block'
+    username.style.borderColor = '#E9B425'
+    password.style.borderColor = '#E9B425'
 }
 
 

@@ -1,6 +1,6 @@
 import { signOutUser } from "./logout.js";
 const countdownSeconds = document.getElementById('countdown')
-let seconds = 30;
+let seconds = 600;
 
 
 const countdownTimer = setInterval(() => {

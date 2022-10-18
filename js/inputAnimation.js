@@ -24,7 +24,8 @@ username.addEventListener('keyup', () => {
         } else {
             username.value.length == 0 ? userIcon.style.left = '230px' : userIcon.style.left = '185px' 
         }
-       
+        username.style.borderColor = '#FFFFFF'
+        
 
 })
 
@@ -37,6 +38,6 @@ password.addEventListener('keyup', () => {
     } else {
         password.value.length == 0 ? passwordIcon.style.left = '230px' : passwordIcon.style.left = '185px' 
     }
-
+    password.style.borderColor = '#FFFFFF'
 })
 
