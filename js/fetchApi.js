@@ -31,7 +31,7 @@ navigator.geolocation.getCurrentPosition(showPosition)
 function showPosition(position) {
   const lat = position.coords.latitude
   const lon = position.coords.longitude
-  console.log(lat, lon)
+  // console.log(lat, lon)
   getGeoLocationPosition(lat, lon)
   getLocationWeather(lat, lon)
 
@@ -47,7 +47,7 @@ function getGeoLocationPosition(lat, lon) {
   axios.get(url2) // Com axios não precisamos usar o json() na resposta
     .then(response => {
       const data = response.data
-      console.log(data)
+      // console.log(data)
       const city = data.address.city;
       const state = data.address.state;
 
