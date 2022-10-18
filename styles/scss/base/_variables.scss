@@ -61,6 +61,11 @@ $mr-3: 6rem;
             @content
         }
     } 
+    @else if($width == mobile-xl) {
+        @media screen and(min-width: 650px) {
+            @content
+        }
+    }
     @else if($width == tablet) {
         @media screen and(min-width: 768px) {
             @content

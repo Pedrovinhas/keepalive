@@ -379,7 +379,7 @@ dialog[open][open] {
 }
 
 .home__header .header__logo {
-  margin-top: .4rem;
+  margin-top: 0.4rem;
   margin-bottom: 1.2rem;
   width: 20%;
   height: 20%;
@@ -422,6 +422,18 @@ dialog[open][open] {
   font-size: 3rem;
   font-weight: 700;
   line-height: 4rem;
+}
+
+@media screen and (min-width: 425px) {
+  .home__header .header__clock .clock__time {
+    font-size: 4.8rem;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .home__header .header__clock .clock__time {
+    font-size: 5.4rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -484,7 +496,7 @@ dialog[open][open] {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: .4rem;
+  margin-top: 0.4rem;
 }
 
 @media screen and (min-width: 425px) {
@@ -523,6 +535,19 @@ dialog[open][open] {
   font-weight: 700;
 }
 
+@media screen and (min-width: 768px) {
+  .home__header .header__weather .weather__container .weather__information {
+    font-size: 2.8rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .home__header .header__weather .weather__container .weather__information {
+    font-size: 4.4rem;
+    margin-top: 1.2rem;
+  }
+}
+
 .home__header .header__weather .weather__container .weather__icon {
   width: 34px;
   height: 34px;
@@ -537,7 +562,7 @@ section .main__message {
   background-repeat: no-repeat;
   background-size: 200px;
   background-position: left -50px bottom -120px;
-  height: 70vh;
+  height: 100vh;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -546,15 +571,23 @@ section .main__message {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin-top: 2.4rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   text-align: right;
 }
 
 @media screen and (min-width: 425px) {
   section .main__message {
-    background-size: 215px;
+    background-size: 240px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  section .main__message {
+    background-size: 280px;
+    background-position: left -50px bottom -30px;
   }
 }
 
@@ -562,13 +595,17 @@ section .main__message {
   section .main__message {
     background-size: 300px;
     background-position: left -50px bottom -20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     height: 100vh;
+    margin-top: 0;
   }
 }
 
 @media screen and (min-width: 1024px) {
   section .main__message {
-    background-size: 350px;
+    background-size: 310px;
     background-position: left -10px bottom -25px;
   }
 }
@@ -632,14 +669,14 @@ section .main__message .message__translation:nth-child(4) {
 }
 
 section .main__message .message__translation:nth-child(6) {
-  -webkit-animation: slideUp 5s;
-          animation: slideUp 5s;
+  -webkit-animation: slideUp 7s;
+          animation: slideUp 7s;
   opacity: 1;
 }
 
 section .main__message .message__translation:nth-child(8) {
-  -webkit-animation: slideUp 7s;
-          animation: slideUp 7s;
+  -webkit-animation: slideUp 9s;
+          animation: slideUp 9s;
   opacity: 1;
 }
 
@@ -688,7 +725,7 @@ section .main__message span:nth-child(7) {
 }
 
 section .main__message .message__subtitle {
-  font-size: 2rem;
+  font-size: 2.2rem;
   line-height: 4.1rem;
   font-weight: 700;
   color: #C12D18;
@@ -781,7 +818,7 @@ section .footer .footer__alert-container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  max-width: 54.1rem;
+  max-width: 40.1rem;
   height: 9.1rem;
 }
 
@@ -837,7 +874,7 @@ section .footer .footer__countdown {
 
 @media screen and (min-width: 768px) {
   section .footer .footer__countdown {
-    margin-left: 0rem;
+    margin-left: 0;
     gap: 1.6rem;
   }
 }
