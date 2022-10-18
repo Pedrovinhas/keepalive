@@ -36,7 +36,7 @@ function signInUser() {
 function showPopup() {
     setTimeout(() => {
       modal.showModal()
-    }, 2000)
+    }, 100)
   }
 
 
